@@ -10,7 +10,7 @@ acs:
   sourceNamespace: openshift-marketplace
   operatorNamespace: rhacs-operator
   namespace: stackrox
-  cliImage: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+  cliImage: quay.io/openshift/origin-cli:latest
 # hubClusterSets:
 #   hub:
 #     labels:

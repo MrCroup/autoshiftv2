@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-autoshiftGitRepo: https://github.com/auto-shift/autoshiftv2.git
+autoshiftGitRepo: https://github.com/MrCroup/autoshiftv2.git
 autoshiftGitBranchTag: main
 
 selfManagedHubSet: hub
@@ -37,13 +37,13 @@ hubClusterSets:
       worker-nodes-numcores-per-socket: ''
       worker-nodes-zone-1: ''
       ### Storage Nodes
-      storage-nodes: '3'
+      storage-nodes: ''
       # storage-nodes-zone-1: 'us-east-2a'
       # storage-nodes-zone-2: 'us-east-2b'
       # storage-nodes-zone-3: 'us-east-2c'
       # storage-nodes-region: 'us-east-2'
-      storage-nodes-instance-type: 'm6in.8xlarge'
-      storage-nodes-provider: aws
+      storage-nodes-instance-type: ''
+      storage-nodes-provider: ''
       storage-nodes-numcpu: ''
       storage-nodes-memory-mib: ''
       storage-nodes-numcores-per-socket: ''
@@ -58,7 +58,7 @@ hubClusterSets:
       lvm-source: redhat-operators
       lvm-source-namespace: openshift-marketplace
       ### Local Storage Operator
-      local-storage: 'false'
+      local-storage: 'true'
       local-storage-channel: stable
       local-storage-install-plan-approval: Automatic
       local-storage-source: redhat-operators
@@ -79,7 +79,7 @@ hubClusterSets:
       odf-source: redhat-operators
       odf-source-namespace: openshift-marketplace
       ### Kubernetes NMState Operator
-      nmstate: 'false'
+      nmstate: 'true'
       # Example nmstate-nncp labels. Label must start with nmstate-nncp
       # also the value must be the name of the config file you want to apply
       # nmstate-nncp-example-bond1: example-bond
@@ -173,7 +173,7 @@ managedClusterSets:
       storage-nodes-numcores-per-socket: ''
       storage-nodes-zones: ''
       ### Local Storage Operator
-      local-storage: 'false'
+      local-storage: 'true'
       local-storage-channel: stable
       local-storage-install-plan-approval: Automatic
       local-storage-source: redhat-operators

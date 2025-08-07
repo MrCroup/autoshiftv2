@@ -241,7 +241,7 @@ spec:
                           fi
 
                           echo "[INFO] Job finished"
-                        image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+                        image: quay.io/openshift/origin-cli:latest
                         imagePullPolicy: Always
                         name: create-admin-user
                       dnsPolicy: ClusterFirst
